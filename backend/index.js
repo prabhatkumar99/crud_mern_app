@@ -10,11 +10,7 @@ import route from "./routes/userRoute.js";
 // use express framework from library
 const app = express();
 app.use(bodyParser.json());
-app.use(cors(
-    origin: ["https://deploy-mern-1whq.vercel.app"],
-    method: ["POST","GET","PUT","DELETE"],
-    credentials:true
-));
+app.use(cors());
 
 // use dotenv for secure important link 
 dotenv.config();
