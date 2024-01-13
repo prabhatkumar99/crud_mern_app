@@ -1,3 +1,39 @@
+#In Server
+Technology used:- Nodejs
+Framework used:- express, cors, body-parser, dotenv, nodemon
+
+#In Mongodb
+Framework used:- mongoose
+Schema Model {
+   item_name: {
+        type: String,
+        required: true
+    },
+
+    categorie_name: {
+        type: String,
+        required: true
+    },
+    price: {
+        type: Number,
+        required: true
+    },
+    status: String,
+    date: String
+}
+}
+
+#API
+Method used [GET, POST, PUT, DELETE]
+app.use("/api",route);
+
+route.post("/create", create);  //for create
+route.get("/getall",getAll);     //for get all data
+route.get("/getone/:id",getOne);  //for get single data
+route.put("/update/:id",update);  //for update data
+route.delete("/delete/:id",deleteUser);  //for delete data
+
+! ScreenShot !
 ![Screenshot (414)](https://github.com/prabhatkumar99/crud_mern_app/assets/70852706/d4891f5b-e186-4702-bdd4-bac399c85e4d)
 ![Screenshot (415)](https://github.com/prabhatkumar99/crud_mern_app/assets/70852706/4581f221-568e-4fac-a4d5-2e039c6f7216)
 ![Screenshot (416)](https://github.com/prabhatkumar99/crud_mern_app/assets/70852706/ec29c08f-864b-4a33-b12d-bff8b8b11000)
